@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../pic/17973908.jpg');
+    background-attachment:fixed;
+    background-size: 100% 100%;
+    /* background-image: linear-gradient(to top, #fbc2eb 10%, #a6c1ee 100%); */
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.form{
+    width: 25%;
+    background: transparent;
+    color: #000000;
+    transition: ease 0.5s;
+}
+.form:hover{
+    transform: scale(1.05);
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+}
+.box{
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.121);
+    margin: 30px 0;
+    border: 2px solid rgba(83, 81, 81, 0.2); 
+    border-radius: 40px;
+    padding-left: 10px;
+}
+.box:hover{
+    background: rgb(201, 230, 255);
+    filter: drop-shadow(10px 7px 10px rgb(6, 6, 6));
+    transform: translateY(4px);
+}
+.icon{
+    position: absolute;
+    padding: 3.8%;
+    font-size: large;
+}
+.box input{
+    width: 80%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding-left: 20%;
+}
+.box input::placeholder{
+    color: #000000;
+    text-align: start;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    font-size: 16px;
+}
+.remember {
+    color: #ffffff;
+}
+/* this a is used for both forget or register */
+a{
+    color: rgb(104, 102, 102);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.button{
+    width: 100%;
+    height: 40px;
+    transition: ease 0.5s;
+}
+.button input{
+    width: 100%;
+    height: 100%;
+    background: rgba(195, 237, 253, 0.153);
+    border: none;  
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    cursor: pointer;
+}
+.button:hover{
+    filter: brightness(100%);
+    transform: scale(1.1);
+    filter: drop-shadow(10px 7px 10px rgb(2, 98, 105));
+}
+.register{
+    display: flex;
+    justify-content: space-between;
+    margin: 4%;
+    font-size: 16px
+}
+.register span{
+    color: rgb(104, 102, 102);
+}
+
+
+@media (max-width: 1020px) {
+    body{
+        font-size: 16px;
+    }
+
+    .form{
+        width: 40%;
+    }
+
+    .icon{
+        position: absolute;
+        padding: 1%;
+        padding-top: 0.7rem;
+        font-size: large;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .form {
+        width: 45%;
+    }
+
+    .icon{
+        position: absolute;
+        padding: 1%;
+        padding-top: 0.8rem;
+        font-size: large;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .icon{
+        position: absolute;
+        padding: 1%;
+        padding-top: 0.9rem;
+        font-size: large;
+    }
+}
+

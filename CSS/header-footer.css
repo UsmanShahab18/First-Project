@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    /* z-index: 1000; */
+    /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+    /* background-image: url('marcel-strauss-fzqxoFJytiE-unsplash.jpg'); */
+}
+
+header{
+    position:absolute;
+    top: 0; left: 0; right: 0;
+    background: transparent;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 120px;
+}
+
+
+
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+}
+header .logo .pic{
+    height: 150px;
+    width: 150px;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    background: #747373;
+    color: #f4f7f8;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #747373;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+header .navbar ul li ul{
+    display: none;
+}
+
+header .navbar ul li:focus-within > ul,
+
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color: transparent;
+}
+
+@media(max-width:991px){
+
+    body{
+        z-index: 1000;
+    }
+
+    header{
+        padding: 20;
+    }
+
+    header .menu{
+        color: #333;
+        cursor: pointer;
+    }
+
+    header lable{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #ffffff;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: #eee;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+}
+
+.container{
+    max-width: 1170px;
+    /* background-color: red; */
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    /* flex-wrap: wrap; */
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #24262b;
+    /* background-color: transparent; */
+    padding: 70px 0;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media(max-width:767px){
+    body{
+        z-index: 1000;
+    }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .container{
+        width: 100%;
+        z-index: 1000;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:574px){
+    .footer-col{
+        width: 100%;
+    }
+}

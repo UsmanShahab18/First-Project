@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="website icon" type="png" href="pic/1.png">
+    <link rel="stylesheet" href="CSS/login_back.css">
+    <link rel="stylesheet" href="CSS/insert.css">
+    <link rel="stylesheet" href="CSS/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Black+Ops+One&family=Dancing+Script&family=Manrope&family=Noto+Nastaliq+Urdu&family=Pacifico&family=Roboto&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Manrope&family=Noto+Nastaliq+Urdu&family=Pacifico&family=Roboto&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Insertion</title>
+</head>
+<body>
+    <header>
+
+        <a href="#" class="logo"><img src="pic/1.png" class="pic" alt=""></a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="menu">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">More <i class="fas fa-caret-down icon"></i></a>
+                    <ul>
+                        <li><a href="insert.html">Insert Data</a></li>
+                        <li><a href="display.php">Display Data</a></li>
+                        <li><a href="modify.php">Modify Data</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="insert">
+        Data Insertion
+    </div>
+    <div class="form">
+        <form action="php/form1.php" method="post">
+            <div>
+                <h4>Patient Data</h4>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-hospital-user icon" style="padding: 3.8%;"></i>             
+                <input
+                    style="height: 20px;"
+                    type="text"
+                    name="username"
+                    required
+                >
+                <label>
+                    <span style="transition-delay:0ms">P</span>
+                    <span style="transition-delay:50ms">a</span>
+                    <span style="transition-delay:100ms">t</span>
+                    <span style="transition-delay:150ms">i</span>
+                    <span style="transition-delay:200ms">e</span>
+                    <span style="transition-delay:250ms">n</span>
+                    <span style="transition-delay:300ms">t</span>
+                    <span style="transition-delay:0ms"></span>
+                    <span style="transition-delay:50ms">N</span>
+                    <span style="transition-delay:100ms">a</span>
+                    <span style="transition-delay:150ms">m</span>
+                    <span style="transition-delay:200ms">e</span>
+                </label>
+            </div>
+            <div class="box">
+                <i class="fa fa-lock icon" aria-hidden="true" style="padding: 3.8%;"></i>
+                <input 
+                    type="password"
+                    name="password"
+                    required
+                >
+                <label>
+                    <span style="transition-delay:0ms">P</span>
+                    <span style="transition-delay:50ms">a</span>
+                    <span style="transition-delay:100ms">s</span>
+                    <span style="transition-delay:150ms">s</span>
+                    <span style="transition-delay:200ms">w</span>
+                    <span style="transition-delay:250ms">o</span>
+                    <span style="transition-delay:300ms">r</span>
+                    <span style="transition-delay:350ms">d</span>
+                </label>
+            </div>
+            <div class="box">
+                <i class="fa-regular fa-envelope icon"aria-hidden="true" style="padding: 3.8%;"></i>
+                <input type="email"
+                name="email"
+                required
+                >
+                <label>
+                    <span style="transition-delay:0ms">E</span>
+                    <span style="transition-delay:50ms">-</span>
+                    <span style="transition-delay:100ms">m</span>
+                    <span style="transition-delay:150ms">a</span>
+                    <span style="transition-delay:200ms">i</span>
+                    <span style="transition-delay:250ms">l</span>
+                </label>
+            </div>
+            <div class="button">
+                <input type="submit" value="submit" name="save">
+            </div>
+        </form>
+    </div>
+        <br><br><br>
+        <div class="form1">
+            <form action="php/form2.php" method="post">
+                <div>
+                    <h4>Therapists Data</h4>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-user-doctor icon" style="padding: 3.8%;"></i>             
+                    <input 
+                        type="text"
+                        name="T_name"
+                        required
+                    >
+                    <label>
+                        <span style="transition-delay:0ms">T</span>
+                        <span style="transition-delay:50ms">h</span>
+                        <span style="transition-delay:100ms">e</span>
+                        <span style="transition-delay:150ms">r</span>
+                        <span style="transition-delay:200ms">p</span>
+                        <span style="transition-delay:250ms">i</span>
+                        <span style="transition-delay:300ms">s</span>
+                        <span style="transition-delay:350ms">t</span>
+                        <span style="transition-delay:400ms">s</span>
+                        <span style="transition-delay:0ms"></span>
+                        <span style="transition-delay:50ms">N</span>
+                        <span style="transition-delay:100ms">a</span>
+                        <span style="transition-delay:150ms">m</span>
+                        <span style="transition-delay:200ms">e</span>
+                    </label>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-user-graduate icon" style="padding: 3.8%;"></i>
+                    <input type="text"
+                    name="Qualifications"
+                    required
+                    >
+                    <label>
+                        <span style="transition-delay:0ms">Q</span>
+                        <span style="transition-delay:50ms">u</span>
+                        <span style="transition-delay:100ms">a</span>
+                        <span style="transition-delay:150ms">l</span>
+                        <span style="transition-delay:200ms">i</span>
+                        <span style="transition-delay:250ms">f</span>
+                        <span style="transition-delay:300ms">i</span>
+                        <span style="transition-delay:350ms">c</span>
+                        <span style="transition-delay:400ms">t</span>
+                        <span style="transition-delay:450ms">i</span>
+                        <span style="transition-delay:500ms">o</span>
+                        <span style="transition-delay:550ms">n</span>
+                        <span style="transition-delay:600ms">s</span>
+                    </label>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-graduation-cap icon" style="padding: 3.8%;"></i>
+                    <input type="text"
+                    name="Specialities"
+                    required
+                    >
+                    <label>
+                        <span style="transition-delay:0ms">S</span>
+                        <span style="transition-delay:50ms">p</span>
+                        <span style="transition-delay:100ms">e</span>
+                        <span style="transition-delay:150ms">c</span>
+                        <span style="transition-delay:200ms">i</span>
+                        <span style="transition-delay:250ms">a</span>
+                        <span style="transition-delay:300ms">l</span>
+                        <span style="transition-delay:350ms">i</span>
+                        <span style="transition-delay:400ms">t</span>
+                        <span style="transition-delay:450ms">i</span>
+                        <span style="transition-delay:500ms">e</span>
+                        <span style="transition-delay:550ms">s</span>
+                    </label>
+                </div>
+                <div class="button">
+                    <input type="submit" value="submit" name="save">
+                </div>
+            </form>
+        </div>
+            <br><br><br>
+            <div class="form2">
+                <form action="php/form3.php" method="post">
+                    <div>
+                        <h4>Appointment Data</h4>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-user-doctor icon" style="padding: 3.8%;"></i>              
+                        <input 
+                            type="number"
+                            name="T_id"
+                            required
+                        >
+                        <label>
+                            <span style="transition-delay:0ms">T</span>
+                            <span style="transition-delay:50ms">h</span>
+                            <span style="transition-delay:100ms">e</span>
+                            <span style="transition-delay:150ms">r</span>
+                            <span style="transition-delay:200ms">p</span>
+                            <span style="transition-delay:250ms">i</span>
+                            <span style="transition-delay:300ms">s</span>
+                            <span style="transition-delay:350ms">t</span>
+                            <span style="transition-delay:400ms">s</span>
+                            <span style="transition-delay:0ms"></span>
+                            <span style="transition-delay:50ms">I</span>
+                            <span style="transition-delay:150ms">d</span>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-hospital-user icon" style="padding: 3.8%;"></i>               
+                        <input 
+                            type="number"
+                            name="U_id"
+                            required
+                        >
+                        <label>
+                            <span style="transition-delay:0ms">P</span>
+                            <span style="transition-delay:50ms">a</span>
+                            <span style="transition-delay:100ms">t</span>
+                            <span style="transition-delay:150ms">i</span>
+                            <span style="transition-delay:200ms">e</span>
+                            <span style="transition-delay:250ms">n</span>
+                            <span style="transition-delay:300ms">t</span>
+                            <span style="transition-delay:0ms"></span>
+                            <span style="transition-delay:50ms">I</span>
+                            <span style="transition-delay:150ms">d</span>
+                            </label>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-calendar-days icon" style="padding: 3.8%;"></i>
+                        <input type="text"
+                        name="date"
+                        required
+                        >
+                        <label>
+                            <span style="transition-delay:50ms">D</span>
+                            <span style="transition-delay:100ms">a</span>
+                            <span style="transition-delay:150ms">t</span>
+                            <span style="transition-delay:200ms">e</span>
+                            <span style="transition-delay:0ms"></span>
+                            <span style="transition-delay:50ms">Y</span>
+                            <span style="transition-delay:150ms">Y</span>
+                            <span style="transition-delay:0ms">/</span>
+                            <span style="transition-delay:50ms">M</span>
+                            <span style="transition-delay:150ms">M</span>
+                            <span style="transition-delay:0ms">/</span>
+                            <span style="transition-delay:50ms">D</span>
+                            <span style="transition-delay:150ms">D</span>
+
+                            </label>
+                    </div>
+                    <div class="box">
+                        <i class="fa-regular fa-clock icon" style="padding: 3.8%;"></i>
+                        <input type="text"
+                        name="time"
+                        required
+                        >
+                        <label>
+                            <span style="transition-delay:50ms">T</span>
+                            <span style="transition-delay:100ms">i</span>
+                            <span style="transition-delay:150ms">m</span>
+                            <span style="transition-delay:200ms">e</span>
+                            <span style="transition-delay:0ms"></span>
+                            <span style="transition-delay:50ms">H</span>
+                            <span style="transition-delay:150ms">H</span>
+                            <span style="transition-delay:0ms">/</span>
+                            <span style="transition-delay:50ms">M</span>
+                            <span style="transition-delay:150ms">M</span>
+                        </label>
+                        </div>
+                    <div class="box">
+                        <i class="fa-regular fa-hourglass icon" style="padding: 3.8%;"></i>
+                        <input type="text"
+                        name="duration"
+                        required
+                        >
+                        <label>
+                            <span style="transition-delay:0ms">D</span>
+                            <span style="transition-delay:50ms">u</span>
+                            <span style="transition-delay:100ms">r</span>
+                            <span style="transition-delay:150ms">a</span>
+                            <span style="transition-delay:200ms">t</span>
+                            <span style="transition-delay:250ms">i</span>
+                            <span style="transition-delay:300ms">o</span>
+                            <span style="transition-delay:350ms">n</span>
+                            <span style="transition-delay:0ms"></span>
+                            <span style="transition-delay:0ms">(</span>
+                            <span style="transition-delay:50ms">m</span>
+                            <span style="transition-delay:100ms">i</span>
+                            <span style="transition-delay:150ms">n</span>
+                            <span style="transition-delay:200ms">)</span>
+                        </label>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="submit" name="save">
+                    </div>
+                </form>
+            </div>
+            <div class="form3">
+                <form action="php/form4.php" method="post">
+                    <div>
+                        <h4>Medication Info</h4>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-hospital-user icon" style="padding: 3.8%;"></i>               
+                        <input 
+                            type="number"
+                            name="U_id"
+                            required
+                        >
+                        <label>
+                            <span style="transition-delay:0ms">P</span>
+                            <span style="transition-delay:50ms">a</span>
+                            <span style="transition-delay:100ms">t</span>
+                            <span style="transition-delay:150ms">i</span>
+                            <span style="transition-delay:200ms">e</span>
+                            <span style="transition-delay:250ms">n</span>
+                            <span style="transition-delay:300ms">t</span>
+                            <span style="transition-delay:0ms"></span>
+                            <span style="transition-delay:50ms">I</span>
+                            <span style="transition-delay:150ms">d</span>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-pills icon" style="padding: 3.8%;"></i>
+                        <input 
+                            type="text"
+                            name="Prescribed"
+                            required
+                        >
+                        <label>
+                            <span style="transition-delay:0ms">P</span>
+                            <span style="transition-delay:50ms">r</span>
+                            <span style="transition-delay:100ms">e</span>
+                            <span style="transition-delay:150ms">s</span>
+                            <span style="transition-delay:200ms">c</span>
+                            <span style="transition-delay:250ms">r</span>
+                            <span style="transition-delay:300ms">i</span>
+                            <span style="transition-delay:350ms">b</span>
+                            <span style="transition-delay:400ms">e</span>
+                            <span style="transition-delay:450ms">d</span>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-file-prescription icon" style="padding: 3.8%;"></i>
+                        <input type="text"
+                        name="Dosage"
+                        required
+                        >
+                        <label>
+                            <span style="transition-delay:0ms">D</span>
+                            <span style="transition-delay:50ms">o</span>
+                            <span style="transition-delay:100ms">s</span>
+                            <span style="transition-delay:150ms">a</span>
+                            <span style="transition-delay:200ms">g</span>
+                            <span style="transition-delay:250ms">e</span>
+                        </label>
+                    </div>
+                    <div class="box">
+                        <img src="pic/side-effect-removebg-preview.png" alt="Girl in a jacket" width="20" height="20" class="icon" style="padding: 3.8%;">
+                        <input type="text"
+                        name="Side_Effects"
+                        required
+                        >
+                        <label>
+                            <span style="transition-delay:0ms">S</span>
+                            <span style="transition-delay:50ms">i</span>
+                            <span style="transition-delay:100ms">d</span>
+                            <span style="transition-delay:150ms">e</span>
+                            <span style="transition-delay:0ms">_</span>
+                            <span style="transition-delay:50ms">E</span>
+                            <span style="transition-delay:100ms">f</span>
+                            <span style="transition-delay:150ms">f</span>
+                            <span style="transition-delay:200ms">e</span>
+                            <span style="transition-delay:250ms">c</span>
+                            <span style="transition-delay:300ms">t</span>
+                            <span style="transition-delay:350ms">es</span>
+                        </label>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="submit" name="save">
+                    </div>
+                </form>
+            </div>
+</body>
+</html>

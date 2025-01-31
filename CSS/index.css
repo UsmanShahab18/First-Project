@@ -1,0 +1,114 @@
+body {
+    color: rgb(190, 17, 69);
+    background-image: url('../pic/6298975.jpg');
+    background-attachment:fixed;
+    background-size: 100% 100%;
+}
+.mian-box{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15rem;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10rem;
+}
+.mian-box .img{
+    width: 50%;
+    padding-left: 10px;
+    transition: ease 0.5s;
+}
+.mian-box .img:hover{
+    transform: scale(1.03);
+}
+
+.mian-box .con{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.mian-box .con .heading{
+    font-size: 35px;
+    margin-bottom: 4rem;
+    color: rgb(19, 19, 78);
+}
+
+.mian-box .con .text{
+    font-size: 25px;
+    text-align:justify ;
+    color: rgba(13, 6, 77, 0.808);
+}
+
+/* .main-classes-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.classes-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: space-between;
+}
+.class-icon {
+    width: 15%;
+    margin: 20px;
+    text-align: center;
+    padding-top: 1rem;
+    border: 2px solid rgb(9, 9, 9, 0.2);
+    border-radius: 1.5rem;
+    font-family: "Black Ops One", cursive;
+    transition: all ease 0.5s;
+}
+.class-icon:hover {
+    transform: rotate(360deg);
+}
+.class-icon img {
+    width: 140px;
+}
+.heading {
+    padding-left: 4rem;
+    padding-top: 7rem;
+    font-family: "Dancing Script", cursive;
+} */
+@media screen and (max-width: 1080px) {
+    .class-icon {
+    width: 25%;
+    margin: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .class-icon {
+    width: 25%;
+    margin: 15px;
+    }
+    .class-icon img {
+    width: 100px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .class-icon {
+    width: 40%;
+    margin: 10px;
+    }
+    h1 {
+    font-size: 1.4rem;
+    }
+    h3 {
+    font-size: 1rem;
+    }
+}
+@media screen and (max-width: 367px) {
+    .class-icon {
+    width: 60%;
+    margin: 2px;
+    }
+    h1 {
+    font-size: 1rem;
+    }
+    h3 {
+    font-size: 0.7rem;
+    }
+}

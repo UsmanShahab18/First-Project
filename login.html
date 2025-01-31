@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .cyberpunk-checkbox {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #adadad;
+            border-radius: 5px;
+            background-color: transparent;
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        
+        .cyberpunk-checkbox:before {
+            content: "";
+            background-color: #30cfd0;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            width: 10px;
+            height: 10px;
+            border-radius: 3px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .cyberpunk-checkbox:checked:before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .cyberpunk-checkbox-label {
+            color: rgb(104, 102, 102);
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    <link rel="stylesheet" href="CSS/login_back.css">
+    <link rel="website icon" type="png" href="pic/1.png">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login for Home Tutor</title>
+    <script>document.body.addEventListener("pointermove", (e)=>{
+        const { currentTarget: el, clientX: x, clientY: y } = e;
+        const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
+        el.style.setProperty('--posX',  x-l-w/2);
+        el.style.setProperty('--posY',  y-t-h/2);
+    })</script>
+</head>
+<body>
+    <div class="form">
+        <form id="loginForm" action="index.html" method="get">
+            <div>
+                <h1>Login</h1>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-user icon"></i>               
+                <input 
+                    type="text"
+                    required
+                >
+                <label>
+                    <span style="transition-delay:0ms">U</span><span style="transition-delay:50ms">s</span><span style="transition-delay:100ms">e</span><span style="transition-delay:150ms">r</span><span style="transition-delay:200ms">n</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">m</span><span style="transition-delay:350ms">e</span>
+                </label>
+            </div>
+            <div class="box">
+                <i class="fa fa-lock icon" aria-hidden="true"></i>
+                <input 
+                    type="password"
+                    required
+                >
+                <label>
+                    <span style="transition-delay:0ms">P</span><span style="transition-delay:50ms">a</span><span style="transition-delay:100ms">s</span><span style="transition-delay:150ms">s</span><span style="transition-delay:200ms">w</span><span style="transition-delay:250ms">o</span><span style="transition-delay:300ms">r</span><span style="transition-delay:350ms">d</span>
+                </label>
+            </div>
+            <div class="remember">
+                <label class="cyberpunk-checkbox-label">
+                    <input type="checkbox" class="cyberpunk-checkbox">
+                    Remember me</label>
+                <a href="#">Forget password?</a>
+            </div>
+            <div class="button">
+                <input type="submit" value="Login"  id="play">
+            </div>
+            <div class="register">
+                <span>Don't have the acount?</span>
+                <a href="singup.html">Sing up</a>
+            </div>
+            <script>
+                let play = document.getElementById("play");
+                let form = document.getElementById("loginForm");
+        
+                function playMusic(event){
+                    event.preventDefault(); // Prevent form submission to play audio first
+                    let audio = new Audio("audio/huh.mp3");
+                    audio.play().then(function() {
+                        form.submit(); // Submit the form after audio plays
+                    }).catch(function(error) {
+                        console.error("Error playing the audio:", error);
+                        form.submit(); // Submit the form even if there's an error playing the audio
+                    });
+                }
+        
+                play.addEventListener("click", playMusic);
+            </script>
+        </form>
+    </div>
+</body>
+</html>
+
